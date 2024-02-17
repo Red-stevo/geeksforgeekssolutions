@@ -18,18 +18,19 @@ class Solution
 
     static ArrayList<Integer> findPoints(int[] arr, int start, int end, int s) {
         int pointer = start;
-        long sum = 0L;
+        long sum = -1;
 
         ArrayList<Integer> list = new ArrayList<>();
 
         if (start <= end) {
             while (sum < s && pointer <= end) {
+                ++sum;
                 sum += arr[pointer];
                 ++pointer;
             }
             if (sum == s) {
                 list.add(start);
-                list.add(pointer-1);
+                list.add(pointer - 1);
                 return list;
             }
             return findPoints(arr, start + 1, end, s);
