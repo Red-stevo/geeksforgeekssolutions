@@ -24,7 +24,8 @@ class Solution
 
         if (start <= end) {
             while (sum < s && pointer <= end) {
-                ++sum;
+                if (sum < 0) ++sum;
+
                 sum += arr[pointer];
                 ++pointer;
             }
