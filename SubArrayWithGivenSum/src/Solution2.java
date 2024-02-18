@@ -27,11 +27,12 @@ class Solution2
                 list.add(pointer+1);
                 return list;
             }
-            if(sum > s) {
+            if((sum > s) || (pointer >= end)) {
                 ++start;
                 sum = 0;
                 pointer = start;
-            }else ++pointer;
+            }else
+                ++pointer;
         }
         list.add(-1);
         return list;
