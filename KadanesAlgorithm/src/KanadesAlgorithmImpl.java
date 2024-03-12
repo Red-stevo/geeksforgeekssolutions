@@ -1,6 +1,6 @@
 public class KanadesAlgorithmImpl implements IKadanesAlgorithm {
     @Override
-    public Long maxSubArraySum(int[] arr) {
+    public Long maxSubArraySum(int[] arr, int n) {
 
         long MAX_VALUE = Long.MIN_VALUE, sum = 0L;
 

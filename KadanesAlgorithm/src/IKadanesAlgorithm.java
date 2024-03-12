@@ -1,4 +1,4 @@
 public interface IKadanesAlgorithm {
 
-    Long maxSubArraySum(int[] arr);
+    Long maxSubArraySum(int[] arr, int n);
 }
