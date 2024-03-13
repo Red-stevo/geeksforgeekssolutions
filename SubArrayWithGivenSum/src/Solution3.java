@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Solution3 {
 
 
-    public ArrayList<Integer> findSubArrayWithAGivenSum(int[] arr, int n, int s){
+    public static ArrayList<Integer> findSubArrayWithAGivenSum(int[] arr, int n, int s){
 
         ArrayList<Integer> list = new ArrayList<>();
 
@@ -28,7 +28,7 @@ public class Solution3 {
             }
 
             if(sum > s){
-                sum = 0;
+
             }
         }
         list.add(-1);
