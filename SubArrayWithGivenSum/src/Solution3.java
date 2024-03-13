@@ -34,4 +34,5 @@ public class Solution3 {
         list.add(-1);
         return list;
     }
+
 }
